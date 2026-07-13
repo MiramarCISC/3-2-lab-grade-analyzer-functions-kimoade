@@ -10,7 +10,7 @@ double calculateTotal(double score1, double score2, double score3) {
 
 double calculateAverage(double total, int count) {
     if (count <= 0) return 0.0;
-    return total / count;
+    return (total / count); // skanakala: added parentheses
 }
 
 char determineLetterGrade(double average) {
@@ -26,7 +26,7 @@ bool isPassing(double average) {
 }
 
 bool isValidScore(double score) {
-    return score >= 0.0 && score <= 100.0;
+    return (score >= 0.0) && (score <= 100.0) ; // skanakala: added parentheses 
 }
 
 void printGradeReport(double total, double average, char letterGrade, bool passingStatus) {
